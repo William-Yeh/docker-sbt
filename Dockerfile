@@ -6,7 +6,7 @@
 #
 # Version     0.7
 
-FROM williamyeh/java7
+FROM jeanblanchard/java:8
 MAINTAINER William Yeh <william.pjyeh@gmail.com>
 
 
@@ -17,10 +17,12 @@ ENV SBT_JAR      https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/s
 ADD  $SBT_JAR  /usr/local/bin/sbt-launch.jar  
 COPY sbt.sh    /usr/local/bin/sbt
 
+RUN apk upgrade --update && \
+    apk add bash
+
 RUN echo "==> fetch all sbt jars from Maven repo..."       && \
     echo "==> [CAUTION] this may take several minutes!!!"  && \
-    sbt
-
+    sbt 
 
 VOLUME [ "/app" ]
 WORKDIR /app
