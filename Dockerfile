@@ -10,7 +10,7 @@ FROM jeanblanchard/java:8
 MAINTAINER William Yeh <william.pjyeh@gmail.com>
 
 
-ENV SBT_VERSION  0.13.8
+ENV SBT_VERSION  0.13.12
 ENV SBT_JAR      https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/$SBT_VERSION/sbt-launch.jar
 
 
