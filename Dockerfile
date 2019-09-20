@@ -10,8 +10,8 @@ FROM jeanblanchard/java:8
 MAINTAINER William Yeh <william.pjyeh@gmail.com>
 
 
-ENV SBT_VERSION  1.1.5
-ENV SBT_JAR      http://central.maven.org/maven2/org/scala-sbt/sbt-launch/$SBT_VERSION/sbt-launch-1.1.5.jar
+ENV SBT_VERSION  1.3.1
+ENV SBT_JAR      http://central.maven.org/maven2/org/scala-sbt/sbt-launch/$SBT_VERSION/sbt-launch-$SBT_VERSION.jar
 
 
 ADD  $SBT_JAR  /usr/local/bin/sbt-launch.jar  

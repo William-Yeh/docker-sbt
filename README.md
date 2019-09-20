@@ -9,4 +9,4 @@ This docker image contains the following software stack:
 
 - Java: Oracle JDK 1.8.0
 
-- Sbt: 0.13.8 (see [tag list](https://registry.hub.docker.com/u/williamyeh/sbt/tags/manage/) for details)
+- Sbt: 1.3.1
